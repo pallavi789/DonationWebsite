@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+
+
+    position: relative;
+}
+
+nav {
+    width: auto;
+    height: 60px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+
+.logo img {
+    margin-top: 100px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    color: #f6dfeb;
+}
+
+.nav-links {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-inks ul li a {
+
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black solid;
+    border: 1px solid black;
+    padding: 12px 34px;
+    word-spacing: 2px;
+    font-size: 13px;
+    margin-top: 60px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #f44336;
+    transition: 1s;
+}
+
+
+.second_nav{
+    width: 100%;
+    height: 40px;
+    padding: 5%;
+    
+    display: flex;
+    position: center;
+    column-gap: 10px;
+    white-space: 10px;
+   margin-top: 30px;
+    
+    list-style: none;
+}
+.second_nav ul li{
+    list-style: none;
+     display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+    font-size: 13px;
+    color: #81b214;
+}
+.second_nav ul li i{
+    font-size: 2.7rem;
+    color: #ba135d;
+    padding: 8px 12px;
+    text-align: center;
+    
+}
+
+.second_nav ul li p{
+    padding:2px;
+    text-align: center;
+}
+
+.wrapper
+{
+    position: center;
+    display: flex;
+    margin-top:10%;
+    
+    width: 100%;
+    justify-content: space-around;
+    clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+.card {
+    margin: 20px;
+    width: 280px;
+    margin-top: 60px;
+    height: 320px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+
+}
+
+.card:hover {
+    transform: translateY(20px);
+
+}
+
+.card:before {
+    content: :"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.card:hover:before {
+    opacity: 1;
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 0.9;
+    
+}
+img:hover{
+    opacity: 0.5;
+    background-size: cover;
+    background-color: red;
+}
+
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+
+
+.
+
+.card .info h1 {
+    margin: 0;
+    position: inherit;
+    font-size: 30px;
+    color: #f54748;
+    cursor: pointer;
+
+}
+
+.card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.second_nav{
+
+    width: 100%;
+    height: 40px;
+   margin-top: 50px;
+    margin-left: 120px;
+    list-style: none;
+}
+.second_nav ul li{
+    list-style: none;
+     display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+   font-family: 'Mate SC', serif;
+font-family: 'Odibee Sans', cursive;
+font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color: #000;
+}
+.second_nav ul li i{
+    font-size: 2.7rem;
+    margin-top: 10px;
+    color: #ba135d;
+    margin-left: 120px;
+}
+
+.second_nav ul li p{
+    margin-top: 15px;
+}
+
+@media(max-width:760px){
+    .second_nav {
+
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 80px;
+    list-style: none;
+}
+
+.second_nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 10px;
+    position: relative;
+    font-family: 'Mate SC', serif;
+    font-family: 'Odibee Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #000;
+    opacity: 1.2;
+}
+
+.second_nav ul li i {
+    font-size: 2.7rem;
+    margin-top: 10px;
+    color: #ba135d;
+    margin-left: 120px;
+}
+
+.second_nav ul li p {
+    margin-top: 15px;
+}
+
+}
+
+
+.social{
+        text-align: center;
+       margin-top: 10%;
+      }
+    .fa {
+          padding: 20px;
+          font-size: 40px;
+          width: 60px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 3px;
+        }
+        
+        
+        .fa-twitter {
+        
+          color: black;
+        }
+        
+        .fa-instagram{
+            color: black;
+        }
+
+    footer{
+            text-align: center;
+        }
+        
+        .footer-bar{
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+@media(max-width:760px){
+    
+
+    .fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    opacity: 1.2;
+        margin-top: 290px;
+}
+
+
+.fa-twitter {
+
+    color: black;
+}
+
+.fa-instagram {
+    color: black;
+}
+footer {
+    text-align: center;
+}
+
+.footer-bar {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+    
+}

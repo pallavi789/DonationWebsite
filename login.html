@@ -1,0 +1,33 @@
+
+<html>
+<head>
+   <title>LOGIN</title>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="login_css.css">
+    </head>
+    <body>
+      <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+        <div class="sign-up-form">
+           
+            <h1>SIGN Up Now</h1>
+            <form  action="login.php" method="POST" >
+                <input type="email" name="username" class="input-box" placeholder="Your Email">
+                <input type="password" name="password" class="input-box" placeholder="Your Password">
+                <p><span><input type="checkbox"></span> I agree to the Terms of services</p>
+                <button type="button" class="signup-btn"> Sign Up</button>
+                <hr>
+                <p class="or">OR</p>
+                 <button type="button" class="signup-btn"> Login with Google</button>
+                 <p>Do you have an account ?<a href="#">Sign In</a></p>
+            </form>
+        </div>  
+  </body>
+</html>
